@@ -1,5 +1,7 @@
 # Climate Change Explained to Frogs Comic
 
+![Cover](layout/p1.png)
+
 Sources files for [Climate Change Explained to Frogs Comic](http://nylnook.com/en/comics/), to be documented with a making of, and to allow translations.
 Created with [Krita](https://krita.org/) and [Inkscape](https://inkscape.org)
 Export script is using Bash 4, Exiftools, Inkscape, ImageMagick, Gostscript, Sed, Calibre, Zip and and Unzip

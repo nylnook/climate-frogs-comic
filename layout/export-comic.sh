@@ -315,12 +315,17 @@ function convertToeBooks {
 	tmp_epub=$(mktemp -d)
 	unzip "$epub" -d $tmp_epub
 	pushd $tmp_epub
-	CONTENT='\t\t<meta property="rendition:layout">pre-paginated</meta>\n\t\t<meta name="original-resolution" content="584x754"/>'
+	CONTENT='\t\t<meta name="fixed-layout" content="true"/>\n\t\t<meta name="original-resolution" content="584x754"/>'
 	sed -i '/<\/metadata>/i\'"$CONTENT" content.opf
-	zip -X0 "$epub" mimetype
-	zip -rDX9 "$epub" * -x mimetype
+	# zip -0 "$epub" mimetype
+	zip -r "$epub" * -x mimetype
 	pushd
 	rm -rf $tmp_epub
+
+	#echo 'Copy and paste next lines to content.opf metadata to be Amazon compliant'
+	#echo '<meta name="fixed-layout" content="true"/>'
+	#echo '<meta name="original-resolution" content="584x754"/>'
+	#calibre-debug --edit-book $joinedfilename.epub
 
 	mv all-pages.pdf ../$direbooks
 	mv all-pages.cbz ../$direbooks

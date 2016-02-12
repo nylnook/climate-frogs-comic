@@ -53,6 +53,17 @@ function checkWebDirs {
 	fi
 }
 
+function checkHDDirs {
+	dir=$dirHDjpg
+	if [ ! -d "${dir}" ]; then
+	  mkdir ${dir}
+	fi
+	dir=$direbooks
+	if [ ! -d "${dir}" ]; then
+	  mkdir ${dir}
+	fi
+}
+
 function checkPrintDirs {
 	dir=$dirprintrgb
 	if [ ! -d "${dir}" ]; then
@@ -122,6 +133,63 @@ function exportWebFile {
 	# check
 	checkExitStatus -silent
 }
+
+function exportHDFile {
+	# check
+	checkFileExists $file
+
+	filename=$(basename "$file")
+	filename="${filename%.*}"
+	#extension="${filename##*.}"
+
+	# export for web
+	inkscape -z $file -e=temp.png -d=342  --export-background-opacity=255 --export-background=white
+	convert temp.png -unsharp 0.48x0.48+0.50+0.012 -colorspace sRGB -quality 92% page-HD-$filename.jpg
+	rm temp.png
+	# Metadata : First remove everything for privacy
+	exiftool -all= -overwrite_original -q page-HD-$filename.jpg
+	# Metadata : Then put credits
+	exiftool \
+		-EXIF:XPTitle="page-$filename" \
+		-IPTC:ObjectName="page-$filename" \
+		-XMP-dc:Title="page-$filename" \
+		-XMP-xmpDM:ShotName="page-$filename" \
+		-EXIF:XPAuthor="$creator" \
+		-IPTC:By-line="$creator" \
+		-XMP-dc:Creator="$creator" \
+		-XMP-pdf:Author="$creator" \
+		-EXIF:Artist="$creator" \
+		-EXIF:Copyright="$copyright" \
+		-EXIF:OwnerName="$creator" \
+		-EXIF:Usercomment="$licence" \
+		-EXIF:XPAuthor="$creator" \
+		-EXIF:XPComment="$copyright"\
+		-IPTC:By-line="$creator" \
+		-IPTC:Contact="$creator" \
+		-IPTC:CopyrightNotice="$licence" \
+		-IPTC:Credit="$creator" \
+		-Photoshop:CopyrightFlag="True" \
+		-Photoshop:URL="$url" \
+		-XMP-aux:OwnerName="$creator" \
+		-XMP-dc:Source="$creator" \
+		-XMP-dc:Creator="$creator" \
+		-XMP-dc:Rights="$licence" \
+		-XMP-pdf:Author="$creator" \
+		-XMP-photoshop:Credit="$creator" \
+		-XMP-photoshop:Source="$creator" \
+		-XMP-xmpDM:Copyright="$copyright" \
+		-XMP-xmpRights:Marked="True" \
+		-XMP-xmpRights:Owner="$creator" \
+		-XMP-xmpRights:UsageTerms="$licence" \
+		-XMP-xmpRights:WebStatement="$url" \
+	 	-overwrite_original -q page-HD-$filename.jpg
+	#move
+	mv page-HD-$filename.jpg $dirHDjpg
+	
+	# check
+	checkExitStatus -silent
+}
+
 
 
 function exportPrintFile {
@@ -230,11 +298,26 @@ function checkWebImg {
 	then
 	  echo "---> Web images are ready"
 	else
-	  echo "---> Generating missing images"
+	  echo "---> Generating missing web images"
 	  for file in $files
 	  do
                 echo "------- $count/$filecount -------"
 		exportWebFile
+		count=$((count+1))
+	  done
+	fi
+}
+
+function checkHDImg {
+	if find "$dirHDjpg" -mindepth 1 -print -quit | grep -q .
+	then
+	  echo "---> HD images are ready"
+	else
+	  echo "---> Generating missing HD images"
+	  for file in $files
+	  do
+                echo "------- $count/$filecount -------"
+		exportHDFile
 		count=$((count+1))
 	  done
 	fi
@@ -245,7 +328,7 @@ function checkPrintImg {
 	then
 	  echo "---> Print images are ready"
 	else
-	  echo "---> Generating missing images"
+	  echo "---> Generating missing print images"
 	  for file in $files
 	  do
                 echo "------- $count/$filecount -------"
@@ -259,6 +342,17 @@ function joinToPdfWeb {
 	#for i in *.jpg; do num=`expr match "$i" '\([0-9]\+\).*'`;
 	#> padded=`printf "%03d" $num`; mv -v "$i" "${i/$num/$padded}"; done
 	convert *.jpg -units PixelsPerInch -density 175x175 $joinedfilename.pdf
+	# Metadata : Then put credits
+	exiftool \
+		-Title="$title" \
+		-Author="$creator" \
+	 	-overwrite_original -q $joinedfilename.pdf
+}
+
+function joinToPdfHD {
+	#for i in *.jpg; do num=`expr match "$i" '\([0-9]\+\).*'`;
+	#> padded=`printf "%03d" $num`; mv -v "$i" "${i/$num/$padded}"; done
+	convert *.jpg -units PixelsPerInch -density 342x342 $joinedfilename.pdf
 	# Metadata : Then put credits
 	exiftool \
 		-Title="$title" \
@@ -300,36 +394,63 @@ function generatePdf {
 }
 
 function convertToeBooks {
-	echo "------- generate eBooks -------"
+	coverid=$(($filecount + 1))
+
+	echo "------- generate web eBooks -------"
 	cd $dirwebjpg
 	joinedfilename=all-pages
 	echo "---> web PDF"
 	joinToPdfWeb
-	echo "---> Cbz"
+	echo "---> web Cbz"
 	zip $joinedfilename.cbz *.jpg
-	echo "---> ePub"
-	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --no-default-epub-cover --dont-grayscale --keep-aspect-ratio
+	echo "---> web ePub"
+	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}"
 
-	#add Fixed layout metadata to be Amazon compliant, thanks to eschwartz in MobileRead Calibre Forums
+	#add metadatas to be Amazon compliant, thanks to eschwartz in MobileRead Calibre Forums
 	epub="$(realpath "$joinedfilename.epub")"
 	tmp_epub=$(mktemp -d)
 	unzip "$epub" -d $tmp_epub
 	pushd $tmp_epub
-	CONTENT='\t\t<meta name="fixed-layout" content="true"/>\n\t\t<meta name="original-resolution" content="584x754"/>'
-	sed -i '/<\/metadata>/i\'"$CONTENT" content.opf
-	# zip -0 "$epub" mimetype
+	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta content="horizontal-lr" name="primary-writing-mode"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="1993x2828" name="original-resolution"/>\n\t\t<meta name="cover" content="id'$coverid'"/>'
+	sed -i '/<\/metadata>/i\'"$metacontent" content.opf
+	sed -e 1~2s'|<itemref |<itemref linear="yes" properties="facing-page-right" |' -i content.opf
+	sed -e 2~2s'|<itemref |<itemref linear="yes" properties="facing-page-left" |' -i content.opf
 	zip -r "$epub" * -x mimetype
 	pushd
 	rm -rf $tmp_epub
 
-	#echo 'Copy and paste next lines to content.opf metadata to be Amazon compliant'
-	#echo '<meta name="fixed-layout" content="true"/>'
-	#echo '<meta name="original-resolution" content="584x754"/>'
-	#calibre-debug --edit-book $joinedfilename.epub
+	mv $joinedfilename.pdf ../$direbooks
+	mv $joinedfilename.cbz ../$direbooks
+	mv $joinedfilename.epub ../$direbooks
 
-	mv all-pages.pdf ../$direbooks
-	mv all-pages.cbz ../$direbooks
-	mv all-pages.epub ../$direbooks
+	echo "------- generate HD eBooks -------"
+	cd ../$dirHDjpg
+	joinedfilename=all-pages-HD
+	echo "---> HD PDF"
+	joinToPdfHD
+	echo "---> HD Cbz"
+	zip $joinedfilename.cbz *.jpg
+	echo "---> HD ePub"
+	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}"
+
+	#add metadatas to be Amazon compliant, thanks to eschwartz in MobileRead Calibre Forums
+	epub="$(realpath "$joinedfilename.epub")"
+	tmp_epub=$(mktemp -d)
+	unzip "$epub" -d $tmp_epub
+	pushd $tmp_epub
+	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta content="horizontal-lr" name="primary-writing-mode"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="902x1280" name="original-resolution"/>\n\t\t<meta name="cover" content="id'$coverid'"/>'
+	sed -i '/<\/metadata>/i\'"$metacontent" content.opf
+	sed -e 1~2s'|<itemref |<itemref linear="yes" properties="facing-page-right" |' -i content.opf
+	sed -e 2~2s'|<itemref |<itemref linear="yes" properties="facing-page-left" |' -i content.opf
+	zip -r "$epub" * -x mimetype
+	pushd
+	rm -rf $tmp_epub
+
+
+	mv $joinedfilename.pdf ../$direbooks
+	mv $joinedfilename.cbz ../$direbooks
+	mv $joinedfilename.epub ../$direbooks
+
 	cd ..
 }
 
@@ -348,6 +469,9 @@ function renameeBooksToTitle {
 	mv all-pages.pdf "$title - ebook".pdf
 	mv all-pages.cbz "$title - ebook".cbz
 	mv all-pages.epub "$title - ebook".epub
+	mv all-pages-HD.pdf "$title - HD ebook".pdf
+	mv all-pages-HD.cbz "$title - HD ebook".cbz
+	mv all-pages-HD.epub "$title - HD ebook".epub
 	cd ..
 }
 
@@ -384,11 +508,13 @@ function checkMetadatas {
 		pubDate=`date +%Y-%m`
 		title="A Testing Title"
 		ebookIsbn="000-000-00000-00-0"
-		webjpg=web-jpg
-		verticalstrip=vertical
-		ebooks=ebooks
-		printrgb=print-rgb
-		printcmyk=print-cmyk
+		language=en
+		dirwebjpg=web-jpg
+		dirHDjpg=hd-jpg
+		dirverticalstrip=vertical
+		direbooks=ebooks
+		dirprintrgb=print-rgb
+		dirprintcmyk=print-cmyk
 	fi
 }
 
@@ -409,8 +535,8 @@ function printExamples {
 
 if [ "$#" -lt 1 ] || [ "$#" -gt 2 ]
 then
-	echo "Please pass a --all, --images, --web-images, --print-images --print, --ebook flag and a directory or a path to a filename.svg to this script.
-Shortcodes -a, -i, -wi, -pi, -p, -e
+	echo "Please pass a --all, --images, --web-images, --hd-images, --print-images, --print, --ebook flag and a directory or a path to a filename.svg to this script.
+Shortcodes -a, -i, -wi, -hi, -pi, -p, -e
 Examples : "
 	printExamples
 	exit
@@ -433,11 +559,13 @@ then
 	if [ "$1" = "--all" ] || [ "$1" = "-a" ]
 	then
 		checkWebDirs
+		checkHDDirs
 		checkPrintDirs
 		for file in $files
 		do
 		        echo "------- $count/$filecount -------"
 			exportWebFile
+			exportHDFile
 			exportPrintFile
 			count=$((count+1))
 		done
@@ -455,6 +583,7 @@ then
 		do
 		        echo "-------- $count/$filecount -------"
 			exportWebFile
+			exportHDFile
 			exportPrintFile
 			count=$((count+1))
 		done
@@ -469,6 +598,15 @@ then
 			count=$((count+1))
 		done
 		generateVerticalStrip
+	elif [ "$1" = "--hd-images" ] || [ "$1" = "-hi" ]
+	then
+		checkHDDirs
+		for file in $files
+		do
+		        echo "------- $count/$filecount -------"
+			exportHDFile
+			count=$((count+1))
+		done
 	elif [ "$1" = "--print-images" ] || [ "$1" = "-pi" ]
 	then
 		checkPrintDirs
@@ -487,6 +625,7 @@ then
 	elif [ "$1" = "--ebook" ] || [ "$1" = "-e" ]
 	then
 		checkWebDirs
+		checkHDDirs
 		checkWebImg
 		convertToeBooks
 		generateVerticalStrip
@@ -503,6 +642,7 @@ then
 	checkMetadatas
 
 	checkWebDirs
+	checkHDDirs
 	checkPrintDirs
 	file=$(basename $1)
 	exportWebFile

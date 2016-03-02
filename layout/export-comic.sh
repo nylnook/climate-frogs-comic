@@ -394,7 +394,7 @@ function generatePdf {
 }
 
 function convertToeBooks {
-	coverid=$(($filecount + 1))
+	#coverid=$(($filecount + 1))
 
 	echo "------- generate web eBooks -------"
 	cd $dirwebjpg
@@ -404,14 +404,14 @@ function convertToeBooks {
 	echo "---> web Cbz"
 	zip $joinedfilename.cbz *.jpg
 	echo "---> web ePub"
-	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}"
+	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}" --cover "page-1.jpg" --remove-first-image
 
 	#add metadatas to be Amazon compliant, thanks to eschwartz in MobileRead Calibre Forums
 	epub="$(realpath "$joinedfilename.epub")"
 	tmp_epub=$(mktemp -d)
 	unzip "$epub" -d $tmp_epub
 	pushd $tmp_epub
-	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta content="horizontal-lr" name="primary-writing-mode"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="1993x2828" name="original-resolution"/>\n\t\t<meta name="cover" content="id'$coverid'"/>'
+	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta content="horizontal-lr" name="primary-writing-mode"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="1993x2828" name="original-resolution"/>'
 	sed -i '/<\/metadata>/i\'"$metacontent" content.opf
 	sed -e 1~2s'|<itemref |<itemref linear="yes" properties="facing-page-right" |' -i content.opf
 	sed -e 2~2s'|<itemref |<itemref linear="yes" properties="facing-page-left" |' -i content.opf
@@ -431,14 +431,14 @@ function convertToeBooks {
 	echo "---> HD Cbz"
 	zip $joinedfilename.cbz *.jpg
 	echo "---> HD ePub"
-	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}"
+	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --book-producer "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}" --cover "page-HD-1.jpg" --remove-first-image
 
 	#add metadatas to be Amazon compliant, thanks to eschwartz in MobileRead Calibre Forums
 	epub="$(realpath "$joinedfilename.epub")"
 	tmp_epub=$(mktemp -d)
 	unzip "$epub" -d $tmp_epub
 	pushd $tmp_epub
-	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta content="horizontal-lr" name="primary-writing-mode"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="902x1280" name="original-resolution"/>\n\t\t<meta name="cover" content="id'$coverid'"/>'
+	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta content="horizontal-lr" name="primary-writing-mode"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="902x1280" name="original-resolution"/>'
 	sed -i '/<\/metadata>/i\'"$metacontent" content.opf
 	sed -e 1~2s'|<itemref |<itemref linear="yes" properties="facing-page-right" |' -i content.opf
 	sed -e 2~2s'|<itemref |<itemref linear="yes" properties="facing-page-left" |' -i content.opf

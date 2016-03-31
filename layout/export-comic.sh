@@ -404,17 +404,23 @@ function convertToeBooks {
 	echo "---> web Cbz"
 	zip $joinedfilename.cbz *.jpg
 	echo "---> web ePub"
-	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}" --cover "page-1.jpg" --remove-first-image
+	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}" --cover "page-1.jpg" --no-svg-cover --remove-first-image
 
 	#add metadatas to be Amazon compliant, thanks to eschwartz in MobileRead Calibre Forums
 	epub="$(realpath "$joinedfilename.epub")"
 	tmp_epub=$(mktemp -d)
 	unzip "$epub" -d $tmp_epub
 	pushd $tmp_epub
-	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta content="horizontal-lr" name="primary-writing-mode"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="1993x2828" name="original-resolution"/>'
+	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta content="horizontal-lr" name="primary-writing-mode"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="902x1280" name="original-resolution"/>'
 	sed -i '/<\/metadata>/i\'"$metacontent" content.opf
 	sed -e 1~2s'|<itemref |<itemref linear="yes" properties="facing-page-right" |' -i content.opf
 	sed -e 2~2s'|<itemref |<itemref linear="yes" properties="facing-page-left" |' -i content.opf
+	coverstyle='\t\t\t\t<link href="stylesheet.css" rel="stylesheet" type="text/css"/>\n\t\t\t\t<link href="page_styles.css" rel="stylesheet" type="text/css"/>'
+	sed -i '/<style /,/<\/style>/d' titlepage.xhtml
+	sed -i '/<\/head>/i\'"$coverstyle" titlepage.xhtml
+	sed -i -e 's/<body>/<body class="calibre">/g' titlepage.xhtml
+	sed -i -e 's/<div>/<div class="calibre1">/g' titlepage.xhtml
+	sed -i -e 's/style="height: 100%"/class="calibre2"/g' titlepage.xhtml
 	zip -r "$epub" * -x mimetype
 	pushd
 	rm -rf $tmp_epub
@@ -431,7 +437,7 @@ function convertToeBooks {
 	echo "---> HD Cbz"
 	zip $joinedfilename.cbz *.jpg
 	echo "---> HD ePub"
-	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --book-producer "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}" --cover "page-HD-1.jpg" --remove-first-image
+	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --book-producer "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}" --cover "page-HD-1.jpg" --no-svg-cover --remove-first-image
 
 	#add metadatas to be Amazon compliant, thanks to eschwartz in MobileRead Calibre Forums
 	epub="$(realpath "$joinedfilename.epub")"
@@ -442,6 +448,12 @@ function convertToeBooks {
 	sed -i '/<\/metadata>/i\'"$metacontent" content.opf
 	sed -e 1~2s'|<itemref |<itemref linear="yes" properties="facing-page-right" |' -i content.opf
 	sed -e 2~2s'|<itemref |<itemref linear="yes" properties="facing-page-left" |' -i content.opf
+	coverstyle='\t\t\t\t<link href="stylesheet.css" rel="stylesheet" type="text/css"/>\n\t\t\t\t<link href="page_styles.css" rel="stylesheet" type="text/css"/>'
+	sed -i '/<style /,/<\/style>/d' titlepage.xhtml
+	sed -i '/<\/head>/i\'"$coverstyle" titlepage.xhtml
+	sed -i -e 's/<body>/<body class="calibre">/g' titlepage.xhtml
+	sed -i -e 's/<div>/<div class="calibre1">/g' titlepage.xhtml
+	sed -i -e 's/style="height: 100%"/class="calibre2"/g' titlepage.xhtml
 	zip -r "$epub" * -x mimetype
 	pushd
 	rm -rf $tmp_epub

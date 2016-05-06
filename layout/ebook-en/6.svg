@@ -27,18 +27,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.7285738"
-     inkscape:cx="331.1158"
-     inkscape:cy="447.71571"
+     inkscape:zoom="1.8940854"
+     inkscape:cx="212.45031"
+     inkscape:cy="40.548582"
      inkscape:document-units="mm"
      inkscape:current-layer="layer3"
      showgrid="false"
      units="mm"
-     inkscape:window-width="1280"
-     inkscape:window-height="1381"
-     inkscape:window-x="1280"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
+     inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:snap-bbox="true"
@@ -425,16 +425,16 @@
      transform="translate(0,-308.26761)"
      sodipodi:insensitive="true">
     <image
-       sodipodi:absref="/home/nylnook/Crea/BD/Grenouilles/layout/ebook-en/../p6.png"
+       sodipodi:absref="/home/nylnook/Crea/BD/climate-frogs-comic/layout/ebook-en/../p6.png"
        xlink:href="../p6.png"
-       transform="translate(0,308.26761)"
-       width="538.65009"
-       height="758.25006"
-       preserveAspectRatio="none"
-       id="image3532"
-       x="-7.1539588"
+       style="display:inline"
        y="-7.0689445"
-       style="display:inline" />
+       x="-7.1539588"
+       id="image3532"
+       preserveAspectRatio="none"
+       height="758.25006"
+       width="538.65009"
+       transform="translate(0,308.26761)" />
   </g>
   <g
      transform="translate(0,-70.866142)"
@@ -442,11 +442,6 @@
      id="layer2"
      inkscape:groupmode="layer"
      style="display:inline">
-    <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.35433072;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 344.28098,720.85176 1.05323,1.54886"
-       id="path3595"
-       inkscape:connector-curvature="0" />
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.35433072;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 432.10423,800.44693 1.37073,-0.96758"
@@ -481,27 +476,6 @@
        id="path8619"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ssssssss" />
-    <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 383.96289,655.66484 0.62616,0.0835"
-       id="path8621"
-       inkscape:connector-curvature="0" />
-    <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 383.96289,654.91344 c -2.54187,-2.19391 -2.52622,-2.02097 0,0 z"
-       id="path8623"
-       inkscape:connector-curvature="0" />
-    <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 383.96289,654.91344 c -1.00186,-0.50093 -2.00372,-1.00186 0,0 z"
-       id="path8625"
-       inkscape:connector-curvature="0" />
-    <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.20838416;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 384.98073,654.76424 -10.67667,13.2391"
-       id="path8627"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
   </g>
   <g
      transform="translate(0,-70.866142)"
@@ -701,12 +675,6 @@
        id="path4356"
        d="m 51.617839,452.48951 -7.20704,24.9154"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.7086615;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker7989)" />
-    <path
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.7086615;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 102.09844,356.83305 10.53547,10.52578"
-       id="path4445"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4451"

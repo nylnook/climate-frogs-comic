@@ -1,8 +1,10 @@
 #!/bin/sh
+# Copyright (c) 2015 Camille Bissuel, MIT License
 
 # v4
-# Usage: ./export-comic.sh X.svg
-# Usage: ./export-comic.sh --all
+# Usage: ./export-comic.sh ebook-en/source-file.svg
+# Usage: ./export-comic.sh --all ebook-en/
+
 
 # Require Bash 4, Exiftools, Inkscape, ImageMagick, Gostscript, Sed, Calibre, Zip and and Unzip
 
@@ -75,6 +77,12 @@ function checkPrintDirs {
 	fi
 }
 
+function checkArtworkDir {
+	dir=$dirartwork
+	if [ ! -d "${dir}" ]; then
+	  mkdir ${dir}
+	fi
+}
 
 # Functions to actually export image form a svg file
 # ==================================================
@@ -87,7 +95,7 @@ function exportWebFile {
 	#extension="${filename##*.}"
 
 	# export for web
-	inkscape -z $file -e=temp.png -d=175  --export-background-opacity=255 --export-background=white
+	inkscape -z $file -e=temp.png -d=175  --export-background-opacity=255
 	convert temp.png -unsharp 0.48x0.48+0.50+0.012 -colorspace sRGB -quality 92% page-$filename.jpg
 	rm temp.png
 	# Metadata : First remove everything for privacy
@@ -143,7 +151,7 @@ function exportHDFile {
 	#extension="${filename##*.}"
 
 	# export for web
-	inkscape -z $file -e=temp.png -d=342  --export-background-opacity=255 --export-background=white
+	inkscape -z $file -e=temp.png -d=342  --export-background-opacity=255
 	convert temp.png -unsharp 0.48x0.48+0.50+0.012 -colorspace sRGB -quality 92% page-HD-$filename.jpg
 	rm temp.png
 	# Metadata : First remove everything for privacy
@@ -202,7 +210,7 @@ function exportPrintFile {
 	
 
 	#export for A5 print best quality (A5 600 dpi = A3 300 dpi)
-	inkscape -z $file -e=tempHD.png -d=600 -T --export-background-opacity=255 --export-background=white --export-margin=0
+	inkscape -z $file -e=tempHD.png -d=600 -T --export-background-opacity=255 --export-margin=0
 	convert tempHD.png -unsharp 0.48x0.48+0.50+0.012 -colorspace sRGB -quality 92% print-page-$filename.jpg
 	rm tempHD.png
 	# Metadata : First remove everything for privacy
@@ -246,7 +254,7 @@ function exportPrintFile {
 	mv print-page-$filename.jpg $dirprintrgb
 
 	#export for A5 print best quality with cutting marks (A5 600 dpi = A3 300 dpi)
-	inkscape -z $file -e=tempHDmarks.png -d=600 -T --export-background-opacity=255 --export-background=white --export-area=-70:-70:594:814
+	inkscape -z $file -e=tempHDmarks.png -d=600 -T --export-background-opacity=255 --export-area=-70:-70:594:814
 	convert tempHDmarks.png -unsharp 0.48x0.48+0.50+0.012 -colorspace sRGB -quality 92% print-page-marks-$filename.jpg
 	rm tempHDmarks.png
 	# Metadata : First remove everything for privacy
@@ -288,6 +296,68 @@ function exportPrintFile {
 	 	-overwrite_original -q print-page-marks-$filename.jpg
 	#move
 	mv print-page-marks-$filename.jpg $dirprintcmyk
+	
+	# check
+	checkExitStatus -silent
+}
+
+function exportArtworkFile {
+	# check
+	checkFileExists $file
+
+	filename=$(basename "$file")
+	filename="${filename%.*}"
+
+
+	#export Artwork only for A5 print best quality (A5 600 dpi = A3 300 dpi) with bleeds
+	inkscape -z $file -e=tempartwork.png -d=600 --export-id-only --export-id="layer1" --export-area=-7:-7:531:751
+	# if there is an artwork in this file and an image is exported
+	if [ -f "tempartwork.png" ]
+	then
+		convert tempartwork.png -unsharp 0.48x0.48+0.50+0.012 -colorspace sRGB -quality 92% artwork-$filename.jpg
+		rm tempartwork.png
+		# Metadata : First remove everything for privacy
+		exiftool -all= -overwrite_original -q artwork-$filename.jpg
+		# Metadata : Then put credits
+		exiftool \
+			-EXIF:XPTitle="page-$filename" \
+			-IPTC:ObjectName="page-$filename" \
+			-XMP-dc:Title="page-$filename" \
+			-XMP-xmpDM:ShotName="page-$filename" \
+			-EXIF:XPAuthor="$creator" \
+			-IPTC:By-line="$creator" \
+			-XMP-dc:Creator="$creator" \
+			-XMP-pdf:Author="$creator" \
+			-EXIF:Artist="$creator" \
+			-EXIF:Copyright="$copyright" \
+			-EXIF:OwnerName="$creator" \
+			-EXIF:Usercomment="$licence" \
+			-EXIF:XPAuthor="$creator" \
+			-EXIF:XPComment="$copyright"\
+			-IPTC:By-line="$creator" \
+			-IPTC:Contact="$creator" \
+			-IPTC:CopyrightNotice="$licence" \
+			-IPTC:Credit="$creator" \
+			-Photoshop:CopyrightFlag="True" \
+			-Photoshop:URL="$url" \
+			-XMP-aux:OwnerName="$creator" \
+			-XMP-dc:Source="$creator" \
+			-XMP-dc:Creator="$creator" \
+			-XMP-dc:Rights="$licence" \
+			-XMP-pdf:Author="$creator" \
+			-XMP-photoshop:Credit="$creator" \
+			-XMP-photoshop:Source="$creator" \
+			-XMP-xmpDM:Copyright="$copyright" \
+			-XMP-xmpRights:Marked="True" \
+			-XMP-xmpRights:Owner="$creator" \
+			-XMP-xmpRights:UsageTerms="$licence" \
+			-XMP-xmpRights:WebStatement="$url" \
+		 	-overwrite_original -q artwork-$filename.jpg
+		#move
+		mv artwork-$filename.jpg $dirartwork
+	else
+		echo "No artwork in this file, nothing exported"
+	fi
 	
 	# check
 	checkExitStatus -silent
@@ -387,14 +457,13 @@ function generatePdf {
 	joinToPdfPrint
 	echo "---> print cmyk PDF with marks"
 	gs -q -dSAFER -dBATCH -dNOPAUSE -dNOCACHE -sDEVICE=pdfwrite \
-	-sColorConversionStrategy=CMYK -dProcessColorModel=/DeviceCMYK \
+	-sColorConversionStrategy=CMYK -sColorConversionStrategyForImages=CMYK -dProcessColorModel=/DeviceCMYK \
 	-sOutputFile="all-print-pages-cmyk.pdf" "all-print-pages-marks.pdf"
 	rm all-print-pages-marks.pdf
 	cd ..
 }
 
 function convertToeBooks {
-	#coverid=$(($filecount + 1))
 
 	echo "------- generate web eBooks -------"
 	cd $dirwebjpg
@@ -404,17 +473,17 @@ function convertToeBooks {
 	echo "---> web Cbz"
 	zip $joinedfilename.cbz *.jpg
 	echo "---> web ePub"
-	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}" --cover "page-1.jpg" --no-svg-cover --remove-first-image
+	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --series "$series" --series-index "$seriesindex" --tags "$tags" --comments "$description" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}" --cover "page-$firstfilename.jpg" --no-svg-cover --remove-first-image
 
 	#add metadatas to be Amazon compliant, thanks to eschwartz in MobileRead Calibre Forums
 	epub="$(realpath "$joinedfilename.epub")"
 	tmp_epub=$(mktemp -d)
 	unzip "$epub" -d $tmp_epub
 	pushd $tmp_epub
-	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta content="horizontal-lr" name="primary-writing-mode"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="902x1280" name="original-resolution"/>'
+	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta name="primary-writing-mode" content="horizontal-lr"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="902x1280" name="original-resolution"/>'
 	sed -i '/<\/metadata>/i\'"$metacontent" content.opf
-	sed -e 1~2s'|<itemref |<itemref linear="yes" properties="facing-page-right" |' -i content.opf
-	sed -e 2~2s'|<itemref |<itemref linear="yes" properties="facing-page-left" |' -i content.opf
+	#sed -e 1~2s'|<itemref |<itemref linear="yes" properties="facing-page-right" |' -i content.opf
+	#sed -e 2~2s'|<itemref |<itemref linear="yes" properties="facing-page-left" |' -i content.opf
 	coverstyle='\t\t\t\t<link href="stylesheet.css" rel="stylesheet" type="text/css"/>\n\t\t\t\t<link href="page_styles.css" rel="stylesheet" type="text/css"/>'
 	sed -i '/<style /,/<\/style>/d' titlepage.xhtml
 	sed -i '/<\/head>/i\'"$coverstyle" titlepage.xhtml
@@ -437,17 +506,17 @@ function convertToeBooks {
 	echo "---> HD Cbz"
 	zip $joinedfilename.cbz *.jpg
 	echo "---> HD ePub"
-	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --book-producer "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}" --cover "page-HD-1.jpg" --no-svg-cover --remove-first-image
+	ebook-convert $joinedfilename.cbz $joinedfilename.epub --authors "$creator" --book-producer "$creator" --publisher "$creator" --title "$title" --isbn "$ebookIsbn" --pubdate "$pubDate" --language "$language" --series "$series" --series-index "$seriesindex" --tags "$tags" --comments "$description" --no-default-epub-cover --dont-grayscale --dont-normalize --keep-aspect-ratio --output-profile tablet --no-process --disable-trim --dont-add-comic-pages-to-toc --wide --extra-css "img{width:100%}" --cover "page-HD-$firstfilename.jpg" --no-svg-cover --remove-first-image
 
 	#add metadatas to be Amazon compliant, thanks to eschwartz in MobileRead Calibre Forums
 	epub="$(realpath "$joinedfilename.epub")"
 	tmp_epub=$(mktemp -d)
 	unzip "$epub" -d $tmp_epub
 	pushd $tmp_epub
-	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta content="horizontal-lr" name="primary-writing-mode"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="902x1280" name="original-resolution"/>'
+	metacontent='\t\t<meta content="comic" name="book-type"/>\n\t\t<meta content="true" name="zero-gutter"/>\n\t\t<meta content="true" name="zero-margin"/>\n\t\t<meta content="true" name="fixed-layout"/>\n\t\t<meta content="none" name="orientation-lock"/>\n\t\t<meta name="primary-writing-mode" content="horizontal-lr"/>\n\t\t<meta content="false" name="region-mag"/>\n\t\t<meta content="902x1280" name="original-resolution"/>'
 	sed -i '/<\/metadata>/i\'"$metacontent" content.opf
-	sed -e 1~2s'|<itemref |<itemref linear="yes" properties="facing-page-right" |' -i content.opf
-	sed -e 2~2s'|<itemref |<itemref linear="yes" properties="facing-page-left" |' -i content.opf
+	#sed -e 1~2s'|<itemref |<itemref linear="yes" properties="facing-page-right" |' -i content.opf
+	#sed -e 2~2s'|<itemref |<itemref linear="yes" properties="facing-page-left" |' -i content.opf
 	coverstyle='\t\t\t\t<link href="stylesheet.css" rel="stylesheet" type="text/css"/>\n\t\t\t\t<link href="page_styles.css" rel="stylesheet" type="text/css"/>'
 	sed -i '/<style /,/<\/style>/d' titlepage.xhtml
 	sed -i '/<\/head>/i\'"$coverstyle" titlepage.xhtml
@@ -462,6 +531,10 @@ function convertToeBooks {
 	mv $joinedfilename.pdf ../$direbooks
 	mv $joinedfilename.cbz ../$direbooks
 	mv $joinedfilename.epub ../$direbooks
+
+	#export cover under 4 millions pixels for Apple
+	convert page-HD-$firstfilename.jpg -resize 80% separate-ebook-cover.jpg
+	mv separate-ebook-cover.jpg ../$direbooks
 
 	cd ..
 }
@@ -484,6 +557,7 @@ function renameeBooksToTitle {
 	mv all-pages-HD.pdf "$title - HD ebook".pdf
 	mv all-pages-HD.cbz "$title - HD ebook".cbz
 	mv all-pages-HD.epub "$title - HD ebook".epub
+	mv separate-ebook-cover.jpg "$title - separate cover".jpg
 	cd ..
 }
 
@@ -505,6 +579,24 @@ function renameVerticalToTitle {
 }
 
 function checkMetadatas {
+	#initial vars
+	creator='creator'
+	url="http://example.com"
+	year=`date +'%Y'`
+	copyright="Copyright (c) $creator $year"
+	licence="A License."
+	pubDate=`date +%Y-%m`
+	title="A Testing Title"
+	ebookIsbn="000-000-00000-00-0"
+	language=en
+	dirwebjpg=web-jpg
+	dirHDjpg=hd-jpg
+	dirverticalstrip=vertical
+	direbooks=ebooks
+	dirprintrgb=print-rgb
+	dirprintcmyk=print-cmyk
+	dirartwork=artwork
+
 	if [ -f "metadata.sh" ]
 	then
 		source ./metadata.sh
@@ -512,21 +604,6 @@ function checkMetadatas {
 	else
 		echo "WARNING --- Metadata.sh file is missing !"
 		echo "WARNING --- Using test Metadatas !"
-		creator='creator'
-		url="http://example.com"
-		year=`date +'%Y'`
-		copyright="Copyright (c) $creator $year"
-		licence="A License."
-		pubDate=`date +%Y-%m`
-		title="A Testing Title"
-		ebookIsbn="000-000-00000-00-0"
-		language=en
-		dirwebjpg=web-jpg
-		dirHDjpg=hd-jpg
-		dirverticalstrip=vertical
-		direbooks=ebooks
-		dirprintrgb=print-rgb
-		dirprintcmyk=print-cmyk
 	fi
 }
 
@@ -538,17 +615,17 @@ function printExamples {
 }
 
 
-# =====================================
-# =        START SCRIPT PROPER        =
-# =====================================
+# ==============================
+# =        START SCRIPT        =
+# ==============================
 
 # Check that arguments have been passed
 # =====================================
 
 if [ "$#" -lt 1 ] || [ "$#" -gt 2 ]
 then
-	echo "Please pass a --all, --images, --web-images, --hd-images, --print-images, --print, --ebook flag and a directory or a path to a filename.svg to this script.
-Shortcodes -a, -i, -wi, -hi, -pi, -p, -e
+	echo "Please pass a --all, --images, --web-images, --hd-images, --ebook-images, --print-images, --print, --ebook, --artwork flag and a directory or a path to a filename.svg to this script.
+Shortcodes -a, -i, -webi, -hdi, -ebi, -printi, -p, -e, -art
 Examples : "
 	printExamples
 	exit
@@ -562,11 +639,17 @@ count=1
 
 if [ "$#" == 2 ]
 then
-	cd $2
+	cd "$2"
+	WorkingDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+	#echo "$WorkingDir"
+
 
 	checkMetadatas
 	files=`ls *.svg *.SVG 2> /dev/null`
 	filecount=`echo $files | wc | awk '{print $2}'`
+	filesarray=( $files )
+	firstfile=${filesarray[0]}
+	firstfilename="${firstfile%.*}"
 
 	if [ "$1" = "--all" ] || [ "$1" = "-a" ]
 	then
@@ -590,7 +673,8 @@ then
 	elif [ "$1" = "--images" ] || [ "$1" = "-i" ]
 	then
 		checkWebDirs
-		checkPrintDirscd ..
+		checkHDDirs
+		checkPrintDirs
 		for file in $files
 		do
 		        echo "-------- $count/$filecount -------"
@@ -600,7 +684,7 @@ then
 			count=$((count+1))
 		done
 		generateVerticalStrip
-	elif [ "$1" = "--web-images" ] || [ "$1" = "-wi" ]
+	elif [ "$1" = "--web-images" ] || [ "$1" = "-webi" ]
 	then
 		checkWebDirs
 		for file in $files
@@ -610,7 +694,7 @@ then
 			count=$((count+1))
 		done
 		generateVerticalStrip
-	elif [ "$1" = "--hd-images" ] || [ "$1" = "-hi" ]
+	elif [ "$1" = "--hd-images" ] || [ "$1" = "-hdi" ]
 	then
 		checkHDDirs
 		for file in $files
@@ -619,7 +703,18 @@ then
 			exportHDFile
 			count=$((count+1))
 		done
-	elif [ "$1" = "--print-images" ] || [ "$1" = "-pi" ]
+	elif [ "$1" = "--ebook-images" ] || [ "$1" = "-ebi" ]
+	then
+		checkWebDirs
+		checkHDDirs
+		for file in $files
+		do
+		        echo "------- $count/$filecount -------"
+			exportWebFile
+			exportHDFile
+			count=$((count+1))
+		done
+	elif [ "$1" = "--print-images" ] || [ "$1" = "-printi" ]
 	then
 		checkPrintDirs
 		for file in $files
@@ -643,24 +738,38 @@ then
 		generateVerticalStrip
 		renameeBooksToTitle
 		renameVerticalToTitle
+	elif [ "$1" = "--artwork" ] || [ "$1" = "-art" ]
+	then
+		checkArtworkDir
+		for file in $files
+		do
+		        echo "------- $count/$filecount -------"
+			exportArtworkFile
+			count=$((count+1))
+		done		
 	fi
 
-	cd ..
+	cd "$WorkingDir"
 
 elif [ "$#" == 1 ]
 then
-	cd $(dirname $1)
+	BaseDir=$(dirname "$1")
+	#echo "$BaseDir"
+	cd "$BaseDir"
+	WorkingDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+	#echo "$WorkingDir"
 
 	checkMetadatas
 
 	checkWebDirs
 	checkHDDirs
 	checkPrintDirs
-	file=$(basename $1)
+	file=$(basename "$1")
 	exportWebFile
+	exportHDFile
 	exportPrintFile
 
-	cd ..
+	cd "$WorkingDir"
 fi
 
 

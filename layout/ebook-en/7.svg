@@ -27,15 +27,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.1196618"
-     inkscape:cx="237.89447"
-     inkscape:cy="226.69682"
+     inkscape:zoom="1.438655"
+     inkscape:cx="309.58288"
+     inkscape:cy="420.36424"
      inkscape:document-units="mm"
      inkscape:current-layer="layer3"
      showgrid="false"
      units="mm"
      inkscape:window-width="1280"
-     inkscape:window-height="1381"
+     inkscape:window-height="1361"
      inkscape:window-x="1280"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
@@ -420,14 +420,14 @@
      transform="translate(0,-308.26761)"
      sodipodi:insensitive="true">
     <image
-       sodipodi:absref="/home/nylnook/Crea/BD/Grenouilles/layout/ebook-en/../p7.png"
+       sodipodi:absref="/home/nylnook/Crea/BD/climate-frogs-comic/layout/ebook-en/../p7.png"
        xlink:href="../p7.png"
-       width="538.65009"
-       height="758.25006"
-       preserveAspectRatio="none"
-       id="image3531"
+       y="301.18097"
        x="-7.1539588"
-       y="301.18097" />
+       id="image3531"
+       preserveAspectRatio="none"
+       height="758.25006"
+       width="538.65009" />
   </g>
   <g
      transform="translate(0,-70.866142)"
@@ -619,7 +619,7 @@
          sodipodi:role="line"
          id="tspan4435"
          x="147.60547"
-         y="190.21907">Copenhague 2009</tspan></text>
+         y="190.21907">Copenhagen 2009</tspan></text>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4451"

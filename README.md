@@ -14,7 +14,7 @@ License
 =======
 
 © Camille Bissuel a.k.a. Nylnook [nylnook.com](http://nylnook.com)  
-Artwork and text is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by/4.0/)  
+Artwork and text is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)  
 Code (bash script) is licensed under the [MIT License](https://opensource.org/licenses/MIT)  
 
 ## Translators and correctors:

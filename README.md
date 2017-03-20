@@ -10,6 +10,13 @@ A [Making Of is available for a better understanding of this source repository](
 
 **Krita files (.kra) can't be hosted here (would exceed disk quota), I'm looking for another solution.**
 
+Fonts
+=====
+
+You will need theses fonts installed on your computer in order to view and edit the .svg files correctly
+[Comili](http://nylnook.com/en/blog/comili-a-libre-comic-font/) - SIL Open Font License
+[Lets trace](https://fontlibrary.org/en/font/lets-trace) - SIL Open Font License
+
 License
 =======
 

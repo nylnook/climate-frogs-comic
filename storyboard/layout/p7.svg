@@ -15,7 +15,7 @@
    viewBox="0 0 524.40946 744.09448"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r"
    sodipodi:docname="p7.svg"
    inkscape:export-filename="/home/nylnook/Crea/BD/dessin/6 - Annexes/base rendu/p7.png"
    inkscape:export-xdpi="600"
@@ -27,15 +27,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4670717"
-     inkscape:cx="13.305941"
-     inkscape:cy="348.09551"
+     inkscape:zoom="1.2126362"
+     inkscape:cx="522.51572"
+     inkscape:cy="297.77211"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="mm"
      inkscape:window-width="2560"
-     inkscape:window-height="1381"
+     inkscape:window-height="1371"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -51,49 +51,57 @@
        inkscape:label=""
        id="guide7382"
        orientation="1,0"
-       position="-7.0866147,0" />
+       position="-7.0866147,0"
+       inkscape:locked="false" />
     <sodipodi:guide
        inkscape:color="rgb(0,0,255)"
        inkscape:label=""
        id="guide7384"
        orientation="1,0"
-       position="531.4961,0" />
+       position="531.4961,0"
+       inkscape:locked="false" />
     <sodipodi:guide
        inkscape:color="rgb(0,0,255)"
        inkscape:label=""
        id="guide7386"
        orientation="0,1"
-       position="0,-7.0866142" />
+       position="0,-7.0866142"
+       inkscape:locked="false" />
     <sodipodi:guide
        inkscape:color="rgb(0,0,255)"
        inkscape:label=""
        id="guide7388"
        orientation="0,1"
-       position="0,751.1811" />
+       position="0,751.1811"
+       inkscape:locked="false" />
     <sodipodi:guide
        inkscape:color="rgb(0,0,255)"
        inkscape:label=""
        id="guide7390"
        orientation="1,0"
-       position="35.433073,0" />
+       position="35.433073,0"
+       inkscape:locked="false" />
     <sodipodi:guide
        inkscape:color="rgb(0,0,255)"
        inkscape:label=""
        id="guide7392"
        orientation="0,1"
-       position="0,708.66142" />
+       position="0,708.66142"
+       inkscape:locked="false" />
     <sodipodi:guide
        inkscape:color="rgb(0,0,255)"
        inkscape:label=""
        id="guide7394"
        orientation="1,0"
-       position="488.97641,0" />
+       position="488.97641,0"
+       inkscape:locked="false" />
     <sodipodi:guide
        inkscape:color="rgb(0,0,255)"
        inkscape:label=""
        id="guide7396"
        orientation="0,1"
-       position="0,35.433071" />
+       position="0,35.433071"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
      id="defs4">
@@ -425,58 +433,53 @@
        height="398.25293"
        x="13.634908"
        y="336.52942" />
-    <g
-       transform="translate(-6.2493334,241.94644)"
-       style="display:inline"
-       id="g5098">
-      <image
-         transform="matrix(-1,0,0,1,0,-237.40147)"
-         width="468.78815"
-         height="468.78815"
-         preserveAspectRatio="none"
-         xlink:href="file:///home/nylnook/Crea/BD/storyboard/6%20-%20Annexes/Grenouilles/export/c_018.jpg"
-         id="image4362"
-         x="-520.56805"
-         y="260.13226"
-         sodipodi:absref="/home/nylnook/Crea/BD/storyboard/6 - Annexes/Grenouilles/export/c_018.jpg"
-         style="display:inline" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path5065"
-         d="m 444.50688,223.7266 c 15.50393,13.38093 -11.54601,22.78463 -7.90933,3.15074 0.70931,-3.82949 0.6872,-4.97308 4.55792,-5.78752"
-         style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path5067"
-         d="m 377.33243,227.70413 c 15.14717,10.84813 -12.9831,17.12656 -6.54439,1.38543 1.05945,-2.5901 4.53985,-1.6956 6.54439,-1.38543 z"
-         style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path5069"
-         d="m 166.19359,273.3116 c -2.48206,-2.58015 -6.01654,-4.2962 -9.72518,-3.64235 -2.12506,0.37466 -2.55108,2.33104 -2.49833,4.20099 0.43928,15.57183 21.42789,8.80454 12.50381,1.16197"
-         style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="scs"
-         inkscape:connector-curvature="0"
-         id="path5071"
-         d="m 224.15471,359.5211 c 2.47809,-16.05463 -3.6334,-14.28863 12.00768,-18.16854 34.57966,32.36497 -16.45644,46.99036 -12.00768,18.16854 z"
-         style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path5073"
-         d="m 319.98066,314.18178 c 7.60115,3.83748 16.6382,11.20708 16.69612,20.44627 0.1815,28.95359 -59.73975,-2.98851 -16.69612,-20.44627 z"
-         style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path5075"
-         d="m 455.43857,345.30927 c 2.91848,7.65758 5.45206,19.79096 -1.19432,26.36786 -17.71884,17.53363 -32.48089,-28.35053 1.19432,-26.36786 z"
-         style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path5077"
-         d="m 82.225528,383.00638 c 39.030832,1.67614 1.62331,26.3929 -2.65675,5.98863 -0.58649,-2.79595 2.7318,-3.2595 2.65675,-5.98863 z"
-         style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
+    <image
+       sodipodi:absref="/home/nylnook/Crea/BD/climate-frogs-comic/storyboard/layout/../export/c_018.jpg"
+       xlink:href="../export/c_018.jpg"
+       transform="scale(-1,1)"
+       width="468.78815"
+       height="468.78815"
+       preserveAspectRatio="none"
+       id="image4362"
+       x="-514.31873"
+       y="264.67725"
+       style="display:inline" />
+    <path
+       style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 438.25755,465.67304 c 15.50393,13.38093 -11.54601,22.78463 -7.90933,3.15074 0.70931,-3.82949 0.6872,-4.97308 4.55792,-5.78752"
+       id="path5065"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 371.0831,469.65057 c 15.14717,10.84813 -12.9831,17.12656 -6.54439,1.38543 1.05945,-2.5901 4.53985,-1.6956 6.54439,-1.38543 z"
+       id="path5067"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 159.94426,515.25804 c -2.48206,-2.58015 -6.01654,-4.2962 -9.72518,-3.64235 -2.12506,0.37466 -2.55108,2.33104 -2.49833,4.20099 0.43928,15.57183 21.42789,8.80454 12.50381,1.16197"
+       id="path5069"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 217.90538,601.46754 c 2.47809,-16.05463 -3.6334,-14.28863 12.00768,-18.16854 34.57966,32.36497 -16.45644,46.99036 -12.00768,18.16854 z"
+       id="path5071"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scs" />
+    <path
+       style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 313.73133,556.12822 c 7.60115,3.83748 16.6382,11.20708 16.69612,20.44627 0.1815,28.95359 -59.73975,-2.98851 -16.69612,-20.44627 z"
+       id="path5073"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 449.18924,587.25571 c 2.91848,7.65758 5.45206,19.79096 -1.19432,26.36786 -17.71884,17.53363 -32.48089,-28.35053 1.19432,-26.36786 z"
+       id="path5075"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.3;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 75.976195,624.95282 c 39.030835,1.67614 1.62331,26.3929 -2.65675,5.98863 -0.58649,-2.79595 2.7318,-3.2595 2.65675,-5.98863 z"
+       id="path5077"
+       inkscape:connector-curvature="0" />
     <rect
        style="opacity:1;fill:#dfdfdf;fill-opacity:1;stroke:none;stroke-width:0.35433072;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4349"
@@ -486,35 +489,35 @@
        y="9.5850706"
        transform="matrix(0,-1,1,0,0,0)" />
     <image
-       sodipodi:absref="/home/nylnook/Crea/BD/storyboard/6 - Annexes/Grenouilles/export/c_021_2048x2048.jpg"
-       y="733.83191"
-       x="336.85513"
-       id="image4395"
-       xlink:href="file:///home/nylnook/Crea/BD/storyboard/6%20-%20Annexes/Grenouilles/export/c_021_2048x2048.jpg"
-       preserveAspectRatio="none"
+       sodipodi:absref="/home/nylnook/Crea/BD/climate-frogs-comic/storyboard/layout/../export/c_021_2048x2048.jpg"
+       xlink:href="../export/c_021_2048x2048.jpg"
+       width="247.84087"
        height="247.84087"
-       width="247.84087" />
-    <image
-       sodipodi:absref="/home/nylnook/Crea/BD/storyboard/6 - Annexes/Grenouilles/export/c_019_2048x2048.jpg"
-       y="746.3891"
-       x="-43.478935"
-       id="image4373"
-       xlink:href="file:///home/nylnook/Crea/BD/storyboard/6%20-%20Annexes/Grenouilles/export/c_019_2048x2048.jpg"
        preserveAspectRatio="none"
-       height="262.30286"
+       id="image4395"
+       x="336.85513"
+       y="733.83191" />
+    <image
+       sodipodi:absref="/home/nylnook/Crea/BD/climate-frogs-comic/storyboard/layout/../export/c_019_2048x2048.jpg"
+       xlink:href="../export/c_019_2048x2048.jpg"
+       transform="rotate(-3.1057481)"
        width="262.30286"
-       transform="matrix(0.99853124,-0.05417899,0.054179,0.99853124,0,0)" />
-    <image
-       clip-path="url(#clipPath5051)"
-       width="253.46495"
-       height="253.46495"
+       height="262.30286"
        preserveAspectRatio="none"
-       xlink:href="file:///home/nylnook/Crea/BD/storyboard/6%20-%20Annexes/Grenouilles/export/c_020_2048x2048.jpg"
-       id="image4435"
-       x="130.36983"
+       id="image4373"
+       x="-43.478935"
+       y="746.3891" />
+    <image
+       sodipodi:absref="/home/nylnook/Crea/BD/climate-frogs-comic/storyboard/layout/../export/c_020_2048x2048.jpg"
+       xlink:href="../export/c_020_2048x2048.jpg"
+       transform="rotate(8.7926127,366.71124,870.1828)"
        y="767.35114"
-       sodipodi:absref="/home/nylnook/Crea/BD/storyboard/6 - Annexes/Grenouilles/export/c_020_2048x2048.jpg"
-       transform="matrix(0.9882481,0.15285842,-0.15285843,0.9882481,137.32433,-45.8286)" />
+       x="130.36983"
+       id="image4435"
+       preserveAspectRatio="none"
+       height="253.46495"
+       width="253.46495"
+       clip-path="url(#clipPath5051)" />
     <rect
        transform="matrix(0,-1,1,0,0,0)"
        y="-299.74115"
@@ -801,30 +804,30 @@
      style="display:inline">
     <text
        xml:space="preserve"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        x="33.168972"
        y="334.40897"
-       id="text4219"
-       sodipodi:linespacing="125%"><tspan
+       id="text4219"><tspan
          sodipodi:role="line"
          id="tspan4221"
          x="33.168972"
          y="334.40897"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:Frenchpress;-inkscape-font-specification:Frenchpress" /></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:1.25;font-family:Frenchpress;-inkscape-font-specification:Frenchpress"> </tspan></text>
     <flowRoot
        transform="translate(-37.329684,34.478724)"
        xml:space="preserve"
        id="flowRoot4275"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"><flowRegion
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"><flowRegion
          id="flowRegion4277"><rect
            id="rect4279"
            width="200.56242"
            height="95.714287"
            x="70.866142"
            y="317.81778" /></flowRegion><flowPara
-         id="flowPara4281" /></flowRoot>    <flowRoot
+         id="flowPara4281"
+         style="font-size:12.5px;line-height:1.25"> </flowPara></flowRoot>    <flowRoot
        transform="translate(344.03604,157.47794)"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="flowRoot3544"
        xml:space="preserve"><flowRegion
          id="flowRegion3546"><rect
@@ -835,9 +838,9 @@
            width="81.80056"
            id="rect3548" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
-         id="flowPara3550" /></flowRoot>    <flowRoot
+         id="flowPara3550"> </flowPara></flowRoot>    <flowRoot
        transform="translate(-10.002543,-293.20857)"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="flowRoot3503"
        xml:space="preserve"><flowRegion
          id="flowRegion3505"><rect
@@ -851,7 +854,7 @@
          id="flowPara3509">Alors elles se réunirent encore une fois pour savoir si oui ou non elles pouvaient se permettre que l’eau de la casserole entre en ébullition. </flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4326"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        transform="translate(119.45813,-38.619871)"><flowRegion
          id="flowRegion4328"><rect
            id="rect4330"
@@ -863,7 +866,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili;letter-spacing:-1.00000012px"
          id="flowPara4403">Il faisait déjà 45 °C.</flowPara></flowRoot>    <flowRoot
        transform="translate(-22.109056,160.85681)"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="flowRoot4513"
        xml:space="preserve"><flowRegion
          id="flowRegion4515"><rect
@@ -876,7 +879,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
          id="flowPara4304">Burt dit que 20°C de plus était la limite à ne pas dépasser, mais qu’il ne renoncerait pas à son confort.</flowPara></flowRoot>    <flowRoot
        transform="translate(162.09645,154.09875)"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="flowRoot4458"
        xml:space="preserve"><flowRegion
          id="flowRegion4460"><rect
@@ -890,7 +893,7 @@
          id="flowPara4464">Fu dit que 30°C de plus et une odeur de gaz était tout à supportable, qu’il comptait bien profiter du confort qu’il avait chèrement gagné, et qu’il pouvait fournir des mouches synthétiques à tous les habitants de la casserole.</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4334"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        transform="translate(156.88588,436.69029)"><flowRegion
          id="flowRegion4336"><rect
            id="rect4338"
@@ -903,7 +906,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili">Dodgi dit qu’il fallait juste couper le gaz et lui laisser sa part de mouches sauvages, mais les deux autres firent semblant de ne pas avoir entendu.</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4352"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;line-height:100%;font-family:Comili;-inkscape-font-specification:'Comili, Normal';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999964px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Comili;-inkscape-font-specification:'Comili, Normal';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999964px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        transform="translate(0,70.866111)"><flowRegion
          id="flowRegion4354"><rect
            id="rect4356"
@@ -911,28 +914,29 @@
            height="17.752636"
            x="244.25177"
            y="511.47375" /></flowRegion><flowPara
-         id="flowPara4358" /></flowRoot>    <text
+         id="flowPara4358"
+         style="font-size:16.25px;line-height:1"> </flowPara></flowRoot>    <text
        xml:space="preserve"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:15.00000095px;line-height:100%;font-family:LetsTrace;-inkscape-font-specification:'LetsTrace Medium';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999964px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:LetsTrace;-inkscape-font-specification:'LetsTrace Medium';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999964px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        x="-103.25745"
        y="507.85403"
-       id="text4362"
-       sodipodi:linespacing="100%"><tspan
+       id="text4362"><tspan
          sodipodi:role="line"
          id="tspan4364"
          x="-103.25745"
-         y="507.85403">smog</tspan></text>
+         y="507.85403"
+         style="font-size:15.00000095px;line-height:1">smog</tspan></text>
     <text
        xml:space="preserve"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:15.00000095px;line-height:100%;font-family:LetsTrace;-inkscape-font-specification:'LetsTrace Medium';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999964px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:0%;font-family:LetsTrace;-inkscape-font-specification:'LetsTrace Medium';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999964px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        x="114.07495"
        y="188.58344"
-       id="text4433"
-       sodipodi:linespacing="100%"><tspan
+       id="text4433"><tspan
          sodipodi:role="line"
          id="tspan4435"
          x="114.07495"
-         y="188.58344">Copenhague 2009</tspan></text>
+         y="188.58344"
+         style="font-size:15.00000095px;line-height:1">Copenhague 2009</tspan></text>
     <path
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.7086615;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m -69.816418,485.06308 -21.2378,17.25425"

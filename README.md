@@ -28,3 +28,4 @@ Code (bash script) is licensed under the [MIT License](https://opensource.org/li
 
 * French: Camille Bissuel, Sophie Bissuel
 * English: Camille Bissuel, Allen Martsch
+* Breizh : Patrick Béchard

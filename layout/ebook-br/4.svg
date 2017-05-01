@@ -27,11 +27,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7920666"
-     inkscape:cx="340.61522"
-     inkscape:cy="210.20416"
+     inkscape:zoom="2.962534"
+     inkscape:cx="69.150684"
+     inkscape:cy="158.67047"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      showgrid="false"
      units="mm"
      inkscape:window-width="2560"
@@ -331,12 +331,12 @@
     <image
        sodipodi:absref="/home/nylnook/Crea/BD/climate-frogs-comic/layout/ebook-br/../p4.png"
        xlink:href="../p4.png"
-       y="301.18097"
-       x="-7.1539588"
-       id="image3502"
-       preserveAspectRatio="none"
+       width="538.65009"
        height="758.25006"
-       width="538.65009" />
+       preserveAspectRatio="none"
+       id="image3502"
+       x="-7.1539588"
+       y="301.18097" />
   </g>
   <g
      transform="translate(0,-70.866142)"
@@ -361,7 +361,7 @@
        inkscape:connector-curvature="0" />
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.70460057;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 60.890669,275.22042 c 18.287602,-16.61553 44.308631,-11.32256 68.224891,-9.38397 37.09082,3.0065 42.62755,-10.14667 61.82721,18.71763 8.82839,13.27238 10.86965,32.69511 14.53317,49.08344 2.40519,10.75925 5.67452,26.50469 -1.50609,36.32829 -14.75503,20.18592 -151.005095,21.36571 -156.402345,-4.12593 -3.745115,-17.68847 -7.142467,-72.02504 13.323164,-90.61946 z"
+       d="m 58.359052,275.53687 c 18.287602,-16.61553 46.840248,-11.63901 70.756508,-9.70042 37.09082,3.0065 45.47562,-10.14667 64.67528,18.71763 8.82839,13.27238 8.02158,32.69511 11.6851,49.08344 2.40519,10.75925 5.67452,26.50469 -1.50609,36.32829 -14.75503,20.18592 -147.524122,22.63152 -152.921372,-2.86012 -3.745115,-17.68847 -13.155057,-72.9744 7.310574,-91.56882 z"
        id="path4347"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssssss" />
@@ -433,7 +433,7 @@
            id="rect3548" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
          id="flowPara3550"> </flowPara></flowRoot>    <flowRoot
-       transform="translate(-5.7169442,-139.01971)"
+       transform="translate(-5.0840401,-135.85519)"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="flowRoot3503"
        xml:space="preserve"><flowRegion
@@ -441,11 +441,13 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-align:center;text-anchor:middle"
            y="414.36749"
            x="56.882267"
-           height="116.50965"
-           width="139.78896"
+           height="114.92738"
+           width="143.90283"
            id="rect3507" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
-         id="flowPara3509">Ezhomm gaz en doa an uzinoù oustouilhoù 'vat, ha gant beajoù Dodji e teue muioc'h a aezhenn c'hoazh.</flowPara></flowRoot>    <flowRoot
+         id="flowPara3509">Ezhomm gaz o doa an uzinoù oustouilhoù 'vat, ha gant beajoù Dodji</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
+         id="flowPara4637">e teue muioc'h a aezhenn c'hoazh.</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4326"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -459,7 +461,7 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Comili;-inkscape-font-specification:Comili;text-align:center;text-anchor:middle" /></flowRegion><flowPara
          id="flowPara4332"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili;letter-spacing:0px">Kreñvoc'h-kreñv e teue ar gaz da vout ha fetisoc'h-fetis ar golo. A-nebeudigoù e teue da vout tommoc'h-tomm.</flowPara></flowRoot>    <flowRoot
-       transform="translate(-14.66808,370.07616)"
+       transform="translate(-12.79308,371.34196)"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="flowRoot4513"
        xml:space="preserve"><flowRegion
@@ -467,8 +469,8 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Comili;-inkscape-font-specification:Comili;text-align:center;text-anchor:middle"
            y="256.16849"
            x="70.09668"
-           height="83.284027"
-           width="116.19402"
+           height="82.018219"
+           width="105.11821"
            id="rect4517" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
          id="flowPara4345">Burt</flowPara><flowPara

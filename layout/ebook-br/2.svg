@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0750579"
-     inkscape:cx="176.4217"
-     inkscape:cy="298.91514"
+     inkscape:zoom="2.5133678"
+     inkscape:cx="113.93339"
+     inkscape:cy="211.12366"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -387,12 +387,12 @@
     <image
        sodipodi:absref="/home/nylnook/Crea/BD/climate-frogs-comic/layout/ebook-br/../p2.png"
        xlink:href="../p2.png"
-       y="301.19867"
-       x="-7.1539588"
-       id="image4318"
-       preserveAspectRatio="none"
+       width="538.65009"
        height="758.25006"
-       width="538.65009" />
+       preserveAspectRatio="none"
+       id="image4318"
+       x="-7.1539588"
+       y="301.19867" />
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m -622.46461,877.69722 c 163.18706,-50.51659 431.29817,-271.78966 476.01716,-402.40908 -4.48563,31.39946 23.75757,57.76263 11.79587,55.51982 -17.51159,19.15231 -277.21584,254.35428 -432.55013,347.41319 -18.31528,10.97246 -45.64604,43.89219 -56.7532,61.5393 -9.87834,15.69478 3.01557,-49.77938 1.4903,-62.06323 z"
@@ -441,14 +441,14 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ssssssss" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.99842525;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 98.923894,528.2544 c -13.459435,-0.45943 -33.153272,0.37162 -43.032365,11.15021 -8.804052,9.60568 -9.527792,23.99286 -7.550689,36.16924 8.242897,50.76551 30.153622,33.30638 72.39952,32.89881 16.75714,-0.16167 42.90542,3.85312 59.29282,-1.33961 19.2943,-6.11384 39.07038,-53.29914 23.2872,-66.28377 -12.56367,-10.33598 -46.38743,-7.48442 -61.95505,-9.61361 -14.40656,-1.97038 -29.16777,-0.71772 -42.441436,-2.98127 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.94229126;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 100.54792,528.2544 c -12.713923,-0.45943 -31.316934,0.37162 -40.648832,11.15021 -8.316403,9.60568 -9.000055,23.99286 -7.132462,36.16924 7.786329,50.76551 28.483437,33.30638 68.389364,32.89881 15.82898,-0.16167 40.52893,3.85312 56.00864,-1.33961 18.22561,-6.11384 36.9063,-53.29914 21.99734,-66.28377 -11.86778,-10.33598 -43.81806,-7.48442 -58.52341,-9.61361 -13.60859,-1.97038 -27.55219,-0.71772 -40.09064,-2.98127 z"
        id="path4384"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssssc" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.86308432;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 136.59985,626.81969 c -6.47656,-3.11773 -16.47429,-0.0563 -22.73392,3.60358 -5.09899,2.98123 -8.46947,8.33422 -9.3747,14.82033 -3.85092,27.59209 42.85281,26.15323 56.17072,25.97362 13.15619,-0.17744 26.43104,-0.21549 39.55746,-1.29423 14.32442,-1.17719 74.84261,-14.77556 36.071,-38.30697 -19.53369,-11.8555 -79.35097,-12.15975 -99.69056,-4.79633 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.66542101;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 144.27718,627.93871 c -5.1752,-3.11773 -13.16405,-0.0563 -18.16592,3.60358 -4.07443,2.98123 -6.76767,8.33422 -7.49101,14.82033 -3.07714,27.59209 34.24225,26.15323 44.88415,25.97362 10.51268,-0.17744 21.12017,-0.21549 31.60906,-1.29423 11.44616,-1.17719 59.80423,-14.77556 28.82313,-38.30697 -15.60872,-11.8555 -63.40672,-12.15975 -79.65941,-4.79633 z"
        id="path4386"
        inkscape:connector-curvature="0" />
     <path
@@ -562,11 +562,11 @@
        xml:space="preserve"
        id="flowRoot3516"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       transform="translate(-18.481153,282.47306)"><flowRegion
+       transform="translate(-13.975171,281.72704)"><flowRegion
          id="flowRegion3518"><rect
            id="rect3520"
-           width="144.5686"
-           height="77.739189"
+           width="138.97353"
+           height="77.739197"
            x="70.866142"
            y="259.24634"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-align:center;text-anchor:middle" /></flowRegion><flowPara
@@ -574,7 +574,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili">Echu an noz, dieub ha kevatal dre wir e oa ar gleskered</flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
          id="flowPara4646">a-benn ar fin,</flowPara></flowRoot>    <flowRoot
-       transform="translate(27.664904,374.03604)"
+       transform="translate(50.791246,374.03604)"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="flowRoot4342"
        xml:space="preserve"><flowRegion
@@ -582,8 +582,8 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:110.00000238%;font-family:Frenchpress;-inkscape-font-specification:Frenchpress;text-align:center;text-anchor:middle"
            y="259.24634"
            x="70.866142"
-           height="45.34045"
-           width="150.40234"
+           height="46.832478"
+           width="106.3877"
            id="rect4346" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
          id="flowPara4348">ha stank e oa ar c'helien,</flowPara></flowRoot>    <flowRoot
@@ -653,7 +653,7 @@
            width="184.23601"
            id="rect4293" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
-         id="flowPara4295">hag ur glesker deus ar Su, Dodji e anv</flowPara></flowRoot>    <flowRoot
+         id="flowPara4295">hag ur glesker deus ar Su, Dodji e anv.</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4352"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Comili;-inkscape-font-specification:'Comili, Normal';text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999964px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"><flowRegion

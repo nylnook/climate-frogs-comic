@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.9655242"
-     inkscape:cx="345.80937"
-     inkscape:cy="280.37213"
+     inkscape:zoom="2.2975903"
+     inkscape:cx="211.55247"
+     inkscape:cy="296.39221"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -430,12 +430,12 @@
     <image
        sodipodi:absref="/home/nylnook/Crea/BD/climate-frogs-comic/layout/ebook-br/../p7.png"
        xlink:href="../p7.png"
-       y="301.18097"
-       x="-7.1539588"
-       id="image3531"
-       preserveAspectRatio="none"
+       width="538.65009"
        height="758.25006"
-       width="538.65009" />
+       preserveAspectRatio="none"
+       id="image3531"
+       x="-7.1539588"
+       y="301.18097" />
   </g>
   <g
      transform="translate(0,-70.866142)"
@@ -487,8 +487,8 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssc" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.70866144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 244.06392,403.38744 c -25.80558,5.43184 -23.09489,31.68366 -26.84108,52.75875 -3.81887,21.48392 -0.60327,48.60953 6.09347,69.2004 9.94526,30.5793 21.18021,36.29499 48.80167,48.2964 12.0252,5.2249 31.78434,10.70209 45.15398,11.28116 24.83921,1.07585 85.69756,-13.18833 99.74367,-35.99951 14.71672,-23.90026 8.45549,-55.40643 11.64396,-82.41075 2.4398,-20.6635 9.15053,-49.43286 -15.03869,-59.97572 -23.23173,-10.12552 -70.68188,-9.94196 -96.2525,-10.65887 -25.26015,-0.7082 -49.28214,5.10559 -73.30448,7.50814 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.68919164;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 247.67442,405.04934 c -24.63252,5.38212 -22.04505,31.39369 -25.62095,52.27591 -3.64527,21.28731 -0.57585,48.16467 5.81647,68.5671 9.49318,30.29944 20.21741,35.96283 46.58326,47.8544 11.47857,5.17709 30.3395,10.60415 43.10139,11.17792 23.71008,1.066 81.80195,-13.06763 95.20956,-35.67005 14.04773,-23.68153 8.07112,-54.89937 11.11465,-81.65655 2.32889,-20.47439 8.73457,-48.98046 -14.35507,-59.42684 -22.17567,-10.03285 -67.46884,-9.85097 -91.87708,-10.56132 -24.11189,-0.70172 -47.04189,5.05886 -69.97223,7.43943 z"
        id="path5061"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssssssc" />
@@ -593,7 +593,13 @@
            width="190.19841"
            id="rect4462" /></flowRegion><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
-         id="flowPara4464">Fu da lâret e oa voaien da badout gant 30°C ouzhpenn ha c'hwezh ar gaz, hag e felle dezhañ profitañ deus e aezamant pa oa bet o c'hwezañ evitañ, hag e c'halle pourveziñ  kelien sintetik d'an holl annezidi er gasterolenn.</flowPara></flowRoot>    <flowRoot
+         id="flowPara4464">Fu da lâret e oa voaien</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
+         id="flowPara4707">da badout gant 30°C ouzhpenn ha c'hwezh</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
+         id="flowPara4709">ar gaz, hag e felle dezhañ profitañ deus e aezamant pa oa bet o c'hwezañ evitañ, hag e c'halle pourveziñ  kelien sintetik d'an holl annezidi</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25000191px;line-height:100%;font-family:Comili;-inkscape-font-specification:Comili"
+         id="flowPara4711">er gasterolenn.</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4334"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Comili;-inkscape-font-specification:Comili;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:middle;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
